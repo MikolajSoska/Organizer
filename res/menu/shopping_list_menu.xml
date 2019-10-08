@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ShoppingList">
+    <item
+        android:id="@+id/add_to_list"
+        android:icon="@drawable/ic_add_list"
+        android:title="@string/add_to_shopping_list"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add_to_fridge"
+        android:enabled="false"
+        android:title="@string/add_to_fridge" />
+</menu>

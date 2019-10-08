@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="344dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/ingredient_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/ingredient_icon"
+            app:srcCompat="@drawable/icon_unknown"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/ingredient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/ingredient_name"
+            android:textColor="#de000000"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ingredient_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="bottom"
+        android:fontFamily="@font/roboto"
+        android:text="@string/quantity"
+        android:textColor="#99000000"
+        android:textSize="18sp"
+        android:layout_gravity="end" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+</LinearLayout>

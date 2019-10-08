@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previous_day"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/cardview_light_background"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_left"
+                android:layout_weight="0"
+                android:contentDescription="@string/previous_day" />
+
+            <TextView
+                android:id="@+id/meal_schedule_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="@string/date_format"
+                android:textAlignment="center"
+                android:textColor="#de000000"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/next_day"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/cardview_light_background"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_right"
+                android:layout_weight="0"
+                android:contentDescription="@string/next_day" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/breakfast_list"
+            layout="@layout/meal_schedule_item" />
+
+        <include
+            android:id="@+id/dinner_list"
+            layout="@layout/meal_schedule_item" />
+
+        <include
+            android:id="@+id/supper_list"
+            layout="@layout/meal_schedule_item" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

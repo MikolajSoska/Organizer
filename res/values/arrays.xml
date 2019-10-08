@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ingredient_menu_array">
+        <item>Usuń</item>
+        <item>Edytuj</item>
+    </string-array>
+    <string-array name="meal_types_array">
+        <item>Śniadanie</item>
+        <item>Obiad</item>
+        <item>Kolacja</item>
+    </string-array>
+</resources>

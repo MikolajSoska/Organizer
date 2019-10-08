@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recipe_card"
+    card_view:cardCornerRadius="4dp"
+    android:elevation="1dp"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/recipe_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/recipe_image_desc"
+            android:cropToPadding="true"
+            card_view:srcCompat="@drawable/recipe_default_image" />
+
+        <TextView
+            android:id="@+id/recipe_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#de000000"
+            android:textSize="24sp"
+            android:gravity="bottom"
+            android:text="@string/recipe_title" />
+
+        <Button
+            android:id="@+id/recipe_item_open_button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:minWidth="64dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/open_recipe"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            style="@android:style/Widget.Material.Button.Borderless.Colored" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
